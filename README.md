@@ -1,10 +1,5 @@
 # Industrial-Pharma-Quality-Data-and-AI-Portfolio
 Optimizing  Industrial and Pharmaceutical  Quality &amp; Production processes using SQL, Python, and AI. Bridging Chemical Engineering domain knowledge with Data Science.
-# Industrial-Pharma-Quality-Data-and-AI-Portfolio
-
-Optimizing Industrial and Pharmaceutical Quality & Production processes using SQL, Python, and AI. Bridging Chemical Engineering domain knowledge with Data Science.
-
----
 
 ## 💊 PROJE 1: Google Veri Analitiği (Pharma Quality Case Study)
 
