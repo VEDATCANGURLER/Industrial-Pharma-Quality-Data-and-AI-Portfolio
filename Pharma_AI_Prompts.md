@@ -14,7 +14,7 @@ Bu proje, İlaç Sektöründeki Kalite Güvence (QA) süreçlerini optimize etme
 **Görev:** Yeni başlayan bir stajyere, karmaşık bir kavram olan "Veri Bütünlüğü"nü (Data Integrity) basit bir dille anlatmak.
 
 **Kullanılan Prompt:**
-```text
+
 Sen uluslararası bir ilaç firmasında (Pharma-X) çalışan, 15 yıllık deneyime sahip, titiz ama öğretmeyi seven Kıdemli Kalite Güvence (QA) Müdürüsün.
 
 GÖREVİN:
