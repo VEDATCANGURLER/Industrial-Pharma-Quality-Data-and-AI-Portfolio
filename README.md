@@ -48,3 +48,19 @@ Amerikan Tarım Bakanlığı'nın (USDA) açık veri portalından alınan Peynir
 * **Filtreleme:** `EXCEPT` veya `NOT IN` mantığıyla, belirli üretim kriterlerini sağlamayan eyaletleri raporladım.
 
 [💻 SQL Kodlarını İncele](USDA_Final_Project.sql)
+
+---
+
+## 🤖 PROJE 3: AI Destekli GMP Asistanı (Prompt Engineering)
+
+**Proje Başlığı:** Yapay Zeka ile Kalite Güvence Süreçlerinin Otomasyonu
+**Sertifika:** ChatGPT Prompt Engineering for Developers (DeepLearning.AI)
+
+### 1. Proje Özeti
+İlaç üretim süreçlerindeki teknik dokümantasyonu (SOP, Hata Raporları) basitleştirmek ve yeni personelin GMP eğitimini hızlandırmak için Yapay Zeka (LLM) tabanlı istem (prompt) şablonları geliştirdim.
+
+### 2. Kullanılan Teknikler
+* **Persona (Rol Atama):** Yapay zekaya "Kıdemli QA Müdürü" rolü atayarak cevapların sektörel standartlara uygun olmasını sağladım.
+* **Few-Shot Prompting:** Modele daha önce yazılmış doğru rapor örneklerini göstererek çıktı kalitesini artırdım.
+
+[📄 Prompt Kütüphanesini ve Senaryoları İncele](Pharma_AI_Prompts.md)
