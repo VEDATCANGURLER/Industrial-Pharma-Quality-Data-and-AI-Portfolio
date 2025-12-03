@@ -1,7 +1,7 @@
 # Industrial-Pharma-Quality-Data-and-AI-Portfolio
 Optimizing  Industrial and Pharmaceutical  Quality &amp; Production processes using SQL, Python, and AI. Bridging Chemical Engineering domain knowledge with Data Science.
 
-## 💊 PROJE 1: Google Veri Analitiği (Pharma Quality Case Study)
+## PROJE 1: Google Veri Analitiği (Pharma Quality Case Study)
 
 **Proje Başlığı:** İlaç Üretiminde Kalite Hatalarının Kök Neden Analizi (Root Cause Analysis)
 **Tarih:** Kasım 2025
@@ -28,7 +28,7 @@ Bir ilaç firmasının üretim hattında artan "Düşük Çözünme Hızı" şik
 
 ---
 
-## 🚜 PROJE 2: SQL ile Tarımsal Üretim Verisi Analizi (USDA Capstone)
+##  PROJE 2: SQL ile Tarımsal Üretim Verisi Analizi (USDA Capstone)
 
 **Proje Başlığı:** Çoklu Emtia Üretim Verilerinin Veritabanı Yönetimi ve Analizi
 **Tarih:** Kasım 2025
@@ -51,7 +51,7 @@ Amerikan Tarım Bakanlığı'nın (USDA) açık veri portalından alınan Peynir
 
 ---
 
-## 🤖 PROJE 3: AI Destekli GMP Asistanı (Prompt Engineering)
+##  PROJE 3: AI Destekli GMP Asistanı (Prompt Engineering)
 
 **Proje Başlığı:** Yapay Zeka ile Kalite Güvence Süreçlerinin Otomasyonu
 **Sertifika:** ChatGPT Prompt Engineering for Developers (DeepLearning.AI)
