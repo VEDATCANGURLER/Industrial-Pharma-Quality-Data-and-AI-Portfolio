@@ -64,3 +64,38 @@ Amerikan Tarım Bakanlığı'nın (USDA) açık veri portalından alınan Peynir
 * **Few-Shot Prompting:** Modele daha önce yazılmış doğru rapor örneklerini göstererek çıktı kalitesini artırdım.
 
 [📄 Prompt Kütüphanesini ve Senaryoları İncele](Pharma_AI_Prompts.md)
+
+---
+
+## PROJE 4: Python ile Emlak Fiyat Tahmini ve Makine Öğrenmesi (IBM Capstone)
+
+**Proje Başlığı:** Seattle Konut Satış Fiyatlarının Regresyon Modelleri ile Tahminlenmesi
+**Tarih:** Aralık 2025
+**Kullanılan Araçlar:** Python (Pandas, NumPy, Matplotlib, Seaborn), Scikit-learn (Ridge, Polynomial Regression)
+
+### 1. Proje Özeti (Ön Yazı)
+IBM Data Analyst Professional Certificate programının bitirme projesi olarak, ABD King County (Seattle) bölgesindeki konut satış verilerini analiz ettim. Evlerin fiziksel özellikleri (m², oda sayısı, manzara vb.) ile satış fiyatları arasındaki korelasyonu inceleyerek, fiyat tahmini yapan makine öğrenmesi modelleri geliştirdim.
+
+### 2. Yapılan Teknik İşlemler
+* **Veri Temizleme (Data Wrangling):** Veri setindeki eksik değerleri (NaN) ortalama değerlerle doldurdum (Imputation) ve analiz için gereksiz olan 'id' gibi sütunları temizledim.
+* **Keşifçi Veri Analizi (EDA):**
+    * `corr()` fonksiyonu ile fiyatı en çok etkileyen faktörleri belirledim.
+    * **Görselleştirme** kullanarak (Boxplot ve Scatter Plot) "Deniz Manzarası"nın fiyata etkisini ve "m²" ile fiyat artışı arasındaki pozitif ilişkiyi kanıtladım.
+* **Makine Öğrenmesi (Model Development):**
+    * Basit ve Çoklu Doğrusal Regresyon (Linear Regression) modelleri kurdum.
+    * **Pipeline** yapısı kullanarak veri ölçekleme (StandardScaler), polinom dönüşümü ve modellemeyi tek bir akışta birleştirdim.
+    * **Ridge Regresyonu** kullanarak modelin aşırı öğrenmesini (overfitting) engelledim ve daha kararlı tahminler elde ettim.
+
+### 3. Sonuç ve Performans
+* **Bulgu:** Evin metrekaresi (`sqft_living`) ve genel kalite puanı (`grade`), fiyatı etkileyen en önemli faktörler olarak tespit edildi.
+* **Model Başarısı:**
+    * Standart Ridge Regresyonu R² Skoru: ~0.64
+    * 2. Dereceden Polinom Dönüşümlü Ridge Regresyonu R² Skoru: **~0.70** (Model, fiyat değişimlerinin %70'ini başarıyla açıklamaktadır).
+
+### 🛠️ Technical Skills (Global Standard)
+* **Data Cleaning:** Handling missing values, formatting, and binning using Pandas.
+* **Exploratory Data Analysis (EDA):** Uncovering patterns via correlation matrices and descriptive statistics.
+* **Machine Learning:** Building predictive models using Linear & Polynomial Regression.
+* **Model Evaluation:** Implementing Ridge Regression and Grid Search for hyperparameter tuning to prevent overfitting.
+
+[💻 Proje Notebook Dosyasını İncele (Python)](House_Sales_in_King_Count_USA.ipynb)
