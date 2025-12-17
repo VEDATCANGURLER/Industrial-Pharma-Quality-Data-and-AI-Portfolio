@@ -98,4 +98,4 @@ IBM Data Analyst Professional Certificate programının bitirme projesi olarak, 
 * **Machine Learning:** Building predictive models using Linear & Polynomial Regression.
 * **Model Evaluation:** Implementing Ridge Regression and Grid Search for hyperparameter tuning to prevent overfitting.
 
-[💻 Proje Notebook Dosyasını İncele (Python)](House_Sales_in_King_Count_USA .ipynb)
+[💻 Proje Notebook Dosyasını İncele (Python)](House_Sales_in_King_Count_USA%20.ipynb)
