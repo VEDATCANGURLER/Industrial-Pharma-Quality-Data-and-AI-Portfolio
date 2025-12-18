@@ -1,5 +1,10 @@
 # Industrial-Pharma-Quality-Data-and-AI-Portfolio
-Optimizing  Industrial and Pharmaceutical  Quality &amp; Production processes using SQL, Python, and AI. Bridging Chemical Engineering domain knowledge with Data Science.
+
+Optimizing Industrial and Pharmaceutical Quality & Production processes using SQL, Python, and AI. Bridging Chemical Engineering domain knowledge with Data Science.
+
+Bu portföy; ilaç, endüstriyel üretim ve kalite (QA/GMP) odaklı veri analizi, SQL, Python ve yapay zeka projelerini içermektedir. Kimya mühendisliği altyapısını, veri bilimi ve yapay zeka ile birleştirerek kalite, üretim ve karar destek süreçlerine katma değer sağlamayı hedefler.
+
+---
 
 ## PROJE 1: Google Veri Analitiği (Pharma Quality Case Study)
 
@@ -20,15 +25,15 @@ Bir ilaç firmasının üretim hattında artan "Düşük Çözünme Hızı" şik
     * Sıcaklık ve Kalite arasındaki ilişkiyi göstermek için **Scatter Plot (Dağılım Grafiği)** oluşturdum.
     * Batch başarı oranlarını tedarikçilere göre kıyaslayan sütun grafikleri hazırladım.
 
-### 3. Sonuç ve İş Etkisi
+### 3. Sonuç ve İş Etkisi (Business Impact)
 * **Bulgu:** "Tedarikçi C" ham maddesi kullanıldığında ve sıcaklık 58°C'yi geçtiğinde, çözünme oranının %70'in altına düşerek "Kalite Reddine (Fail) sebep olduğu kanıtlandı.
-* **Öneri:** Tedarikçi C ile çalışmanın durdurulması veya sıcaklık parametrelerinin revize edilmesi önerildi.
+* **Etki:** Hatalı parti (batch) oranını artıran kritik proses parametreleri ve tedarikçi etkisi net şekilde ortaya konmuştur. Kalite reddine sebep olan koşullar veri ile kanıtlanarak QA ekiplerinin daha hızlı ve doğru karar alması sağlanmıştır.
 
 [📂 Proje Veri Setini İncele (CSV)](Pharma_Dataset.csv)
 
 ---
 
-##  PROJE 2: SQL ile Tarımsal Üretim Verisi Analizi (USDA Capstone)
+## PROJE 2: SQL ile Tarımsal Üretim Verisi Analizi (USDA Capstone)
 
 **Proje Başlığı:** Çoklu Emtia Üretim Verilerinin Veritabanı Yönetimi ve Analizi
 **Tarih:** Kasım 2025
@@ -37,21 +42,21 @@ Bir ilaç firmasının üretim hattında artan "Düşük Çözünme Hızı" şik
 ### 1. Proje Özeti (Ön Yazı)
 Amerikan Tarım Bakanlığı'nın (USDA) açık veri portalından alınan Peynir, Süt, Bal, Kahve, Yumurta ve Yoğurt üretim verilerini analiz ettim. Ham verileri (CSV) yerel bir veritabanı ortamına (DBeaver/SQLite) taşıyarak, üretim trendlerini ve eyaletler arası ilişkileri inceleyen karmaşık sorgular yazdım.
 
-### 2. Karşılaşılan Zorluklar ve Teknik Çözümler (Mülakat Odaklı)
+### 2. Karşılaşılan Zorluklar ve Teknik Çözümler
 * **Veri Tipi ve Format Sorunları (Data Cleaning):** Kaynak verideki sayısal değerler "metin" (string) formatında ve virgüllü (Örn: "1,000") geliyordu. Bu durum matematiksel hesaplamaları imkansız kılıyordu.
     * *Çözüm:* `REPLACE` ve `CAST` fonksiyonlarını iç içe kullanarak tüm tablolardaki virgülleri temizledim ve verileri güvenli bir şekilde sayısal (INTEGER) formata dönüştürdüm.
 * **Veri Bütünlüğü:** Farklı tablolardaki (Örn: Peynir ve Yoğurt) verileri birleştirirken satır çoğalması (row explosion) riskini yönetmek için `DISTINCT` ve Alt Sorgular (Subqueries) kullandım.
 
-### 3. Yapılan Analizler
-* **Aggregation (Toplulaştırma):** Yıllık toplam üretim (SUM) ve ortalama üretim (AVG) hesaplamalarıyla sektörlerin büyüme/küçülme trendlerini belirledim.
-* **JOINs & Kesişimler:** `INNER JOIN` ve `LEFT JOIN` kullanarak, belirli bir dönemde (Örn: Nisan 2023) hem süt hem bal üreten eyaletleri tespit ettim.
-* **Filtreleme:** `EXCEPT` veya `NOT IN` mantığıyla, belirli üretim kriterlerini sağlamayan eyaletleri raporladım.
+### 3. Bu Proje Neyi Gösteriyor?
+* Gerçek hayatta sık karşılaşılan kirli (dirty) veri problemlerinin SQL ile nasıl çözüldüğünü göstermektedir.
+* Çoklu tablo yapılarında veri bütünlüğünü koruyarak analiz yapabilme yetkinliğini ortaya koymaktadır.
+* Mülakatlarda sorulan ileri seviye SQL senaryolarına doğrudan karşılık gelmektedir.
 
 [💻 SQL Kodlarını İncele](USDA_Final_Project.sql)
 
 ---
 
-##  PROJE 3: AI Destekli GMP Asistanı (Prompt Engineering)
+## PROJE 3: AI Destekli GMP Asistanı (Prompt Engineering)
 
 **Proje Başlığı:** Yapay Zeka ile Kalite Güvence Süreçlerinin Otomasyonu
 **Sertifika:** ChatGPT Prompt Engineering for Developers (DeepLearning.AI)
@@ -62,6 +67,10 @@ Amerikan Tarım Bakanlığı'nın (USDA) açık veri portalından alınan Peynir
 ### 2. Kullanılan Teknikler
 * **Persona (Rol Atama):** Yapay zekaya "Kıdemli QA Müdürü" rolü atayarak cevapların sektörel standartlara uygun olmasını sağladım.
 * **Few-Shot Prompting:** Modele daha önce yazılmış doğru rapor örneklerini göstererek çıktı kalitesini artırdım.
+
+### 3. Beklenen İş Etkisi
+* QA dokümantasyonlarının (SOP, sapma raporları) daha hızlı ve standart şekilde yorumlanmasını sağlar.
+* Yeni başlayan QA personelinin GMP süreçlerine adaptasyon süresini kısaltır.
 
 [📄 Prompt Kütüphanesini ve Senaryoları İncele](Pharma_AI_Prompts.md)
 
@@ -92,10 +101,22 @@ IBM Data Analyst Professional Certificate programının bitirme projesi olarak, 
     * Standart Ridge Regresyonu R² Skoru: ~0.64
     * 2. Dereceden Polinom Dönüşümlü Ridge Regresyonu R² Skoru: **~0.70** (Model, fiyat değişimlerinin %70'ini başarıyla açıklamaktadır).
 
+### 4. Aktarılabilir Kazanımlar (Transferable Skills)
+* Regresyon modelleri ile proses parametrelerinin çıktılar üzerindeki etkisini analiz etme yetkinliği kazanılmıştır.
+* Modelleme yaklaşımı, endüstriyel üretim ve kalite verilerine doğrudan uygulanabilir yapıdadır.
+
 ### 🛠️ Technical Skills (Global Standard)
 * **Data Cleaning:** Handling missing values, formatting, and binning using Pandas.
 * **Exploratory Data Analysis (EDA):** Uncovering patterns via correlation matrices and descriptive statistics.
 * **Machine Learning:** Building predictive models using Linear & Polynomial Regression.
 * **Model Evaluation:** Implementing Ridge Regression and Grid Search for hyperparameter tuning to prevent overfitting.
 
-[💻 Proje Notebook Dosyasını İncele (Python)](House_Sales_in_King_Count_USA%20.ipynb)
+[💻 Proje Notebook Dosyasını İncele (Python)](House_Sales_in_King_Count_USA.ipynb)
+
+---
+
+### Kariyer Odak Alanları
+* QA / Quality Data Analyst
+* Endüstriyel Veri Analisti
+* GMP & Quality Analytics Specialist
+* Yapay Zeka Destekli Kalite Mühendisi
